@@ -8,11 +8,11 @@
 
 Penumbra is a tiny menu bar app for Apple Silicon MacBooks that takes over the brightness keys and makes them do more:
 
-- **Brightness in 50 steps** of 2 % instead of macOS's 16.
+- **Brightness in 100 steps** of 1 % instead of macOS's 16.
 - **Color temperature** from 6000 K down to 1000 K in 50 K steps — past Night Shift's 2700 K floor — and then on to **pure red** for astronomy and dark-adapted eyes.
 - **Keyboard backlight** in 10 steps that all visibly change the light. (Apple Silicon keyboards dropped the dedicated keys.)
 - **Fn Lock** like on a ThinkPad: `fn` + `Esc` toggles between F1–F12 and media keys.
-- A native-looking on-screen bar (Liquid Glass on macOS 26) with the value: `25/50`, `3450 K`, `● 40%`.
+- A native-looking on-screen bar (Liquid Glass on macOS 26) with the value: `50/100`, `3450 K`, `● 40%`.
 
 No windows, no Dock icon, no dependencies. Native Swift, a few hundred lines.
 

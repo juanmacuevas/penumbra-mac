@@ -8,11 +8,11 @@
 
 Penumbra es una pequeña app de barra de menús para MacBooks con Apple Silicon que toma el control de las teclas de brillo y les da más usos:
 
-- **Brillo en 50 pasos** del 2 %, en lugar de los 16 de macOS.
+- **Brillo en 100 pasos** del 1 %, en lugar de los 16 de macOS.
 - **Temperatura de color** de 6000 K a 1000 K en pasos de 50 K (por debajo del límite de 2700 K de Night Shift) y después hasta **rojo puro**, para astronomía y para no perder la adaptación a la oscuridad.
 - **Luz del teclado** en 10 pasos, todos con un cambio visible. Los teclados con Apple Silicon perdieron sus teclas dedicadas.
 - **Fn Lock** como en un ThinkPad: `fn` + `Esc` alterna entre F1–F12 y teclas multimedia.
-- Una barra en pantalla con aspecto nativo (Liquid Glass en macOS 26) que muestra el valor: `25/50`, `3450 K`, `● 40%`.
+- Una barra en pantalla con aspecto nativo (Liquid Glass en macOS 26) que muestra el valor: `50/100`, `3450 K`, `● 40%`.
 
 Sin ventanas, sin icono en el Dock y sin dependencias. Swift nativo, unos cientos de líneas.
 

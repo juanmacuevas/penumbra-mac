@@ -3,8 +3,8 @@
 import Foundation
 
 enum Config {
-    // Brightness: 50 linear steps of 2 %. Position 0 turns the backlight off.
-    static let brightnessZones: [(upTo: Double, step: Double)] = [(1.00, 0.02)]
+    // Brightness: 100 linear steps of 1 %. Position 0 turns the backlight off.
+    static let brightnessZones: [(upTo: Double, step: Double)] = [(1.00, 0.01)]
 
     // Keyboard backlight: off + 10 geometric levels (how the eye perceives light).
     // Tested by eye on an M2 MacBook Air: every value from ~0.25 down to 0.001 looks identical
@@ -25,7 +25,7 @@ enum Config {
 
     // Holding a key: after `holdDelay`, one step every fixed interval (no acceleration).
     static let holdDelay = 0.30
-    static let repeatBrightness = 0.05   // 50 steps ≈ 2.5 s
+    static let repeatBrightness = 0.03   // 100 steps ≈ 3 s
     static let repeatKeyboard = 0.15     // 10 steps ≈ 1.5 s
     static let repeatTemperature = 0.03  // 120 steps ≈ 3.6 s
     static let maxHold = 8.0             // safety stop if the key-up never arrives

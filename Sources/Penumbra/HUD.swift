@@ -101,17 +101,18 @@ final class HUD {
 
         panel.contentView?.effectiveAppearance.performAsCurrentDrawingAppearance {
             icon.contentTintColor = isTemperature ? .systemOrange : .labelColor
-            track.layer?.backgroundColor = NSColor.labelColor.withAlphaComponent(0.18).cgColor
-            fill.layer?.backgroundColor = isTemperature ? NSColor.clear.cgColor : NSColor.labelColor.cgColor
+            // The bar is always white (not the theme's text color, which turns black in light mode).
+            track.layer?.backgroundColor = NSColor.white.withAlphaComponent(0.25).cgColor
+            fill.layer?.backgroundColor = isTemperature ? NSColor.clear.cgColor : NSColor.white.cgColor
             let red = Temperature.redSteps / Temperature.steps
             let nightShiftMin = Temperature.position(ofKelvin: Temperature.range.min) / Temperature.steps
             if nightShiftMin > 0 {
                 gradient.colors = [NSColor(srgbRed: 1, green: 0, blue: 0, alpha: 1).cgColor,
                                    NSColor(srgbRed: 1, green: 0.25, blue: 0.05, alpha: 1).cgColor,
-                                   NSColor.systemOrange.cgColor, NSColor.labelColor.cgColor]
+                                   NSColor.systemOrange.cgColor, NSColor.white.cgColor]
                 gradient.locations = [0, NSNumber(value: red), NSNumber(value: nightShiftMin), 1]
             } else {
-                gradient.colors = [NSColor.systemOrange.cgColor, NSColor.labelColor.cgColor]
+                gradient.colors = [NSColor.systemOrange.cgColor, NSColor.white.cgColor]
                 gradient.locations = nil
             }
         }

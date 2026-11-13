@@ -1,4 +1,4 @@
-VERSION ?= 0.1.0
+VERSION ?= 0.1.1
 APP      = build/Penumbra.app
 BIN      = .build/release/Penumbra
 ZIP      = build/Penumbra-$(VERSION).zip
